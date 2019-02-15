@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <title>Jokes</title>
 </head>
 <body>
-<h1>Chuck Norris Joke !!! </h1>
-<p th:text="${joke}">Insert Joke Here</p>
+<br>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Spring Boot Jokes App - Chuck Norris Joke !!!</div>
+        <div class="panel-body">
+            <h3>Joke</h3>
+            <div class="jumbotron">
+                <h2  th:text="${joke}">Joke</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
